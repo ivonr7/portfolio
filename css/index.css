@@ -24,6 +24,7 @@ body{
     height: 100vh;
 }
 .projects {
-background-color: lightblue;
-height: 100vh;
+    background-color: lightblue;
+    position: relative;
+    height: 100%;
 }
