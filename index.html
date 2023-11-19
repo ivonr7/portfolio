@@ -8,7 +8,9 @@
 </head>
 <body>
     <nav class="navigation">
-        home
+        <a href="#">home</a>
+        <a href="#Cancer">Project 1</a>
+        <a href="#Nlp">Project 2</a>
     </nav>
     <main class="container">
         <aside class="about">
@@ -56,7 +58,7 @@
 
         <section class="projects">
             
-            <article class="Cancer">
+            <article id="Cancer">
                 <h2>Blob Detection in Python</h2>
                 <a href="#">link to project</a>
                 <img src="#" alt="Bead image">
@@ -64,8 +66,8 @@
                     For this project I was at BC Cancer.  It was an exploratory project seeing if we could characterize if our images were in focus from the radii of Bead images from our microscope.  Bead images were little flurophores (small object the emit light if excited by a certain wavelenght) ie little circles in the image that due to physics would get bigger if the object was out of focus or smaller if it was in focus.  This project involved increasing contrast using autoscaling.  Using adaptive thresholding to convert the image to binary and creating nicer circles using morphological opening and closing.  It finally used scikit images region props function to get features.  We then filter based on eccentricity and diameter. 
                 </p>
             </article>
-
-            <article class="Nlp">
+           
+            <article id="Nlp">
                 <h2>Using BERTopic for topic modeling</h2>
                 <a href="#">link to project</a>
                 <img src="#" alt="cluster">
