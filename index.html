@@ -5,64 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Isaac von Riedemann</title>
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href=
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./JS/openNav.js"></script>
+    <script src="./JS/closeNav().js"></script>
 </head>
 <body>
     <nav class="navigation">
-        home
+        
+        <div class="links" id="Links">
+        <!-- home -->
+        <a class="moveButt" href="#" > home</a>
+
+        <!-- Project1 -->
+        <a class="moveButt" href="#Cancer" > Proj 1</a>
+
+        <!-- Project2 -->
+            <a class="moveButt" href="#Nlp" >  Proj 2</a>
+        </div>
+        
     </nav>
     <main class="container">
-        <aside class="about">
-            <h3>Isaac von Riedemann</h3>
-            
-            <article class="bio">
-                Hi, I'm Isaac a curious person interested in data: 
-                <ul>
-                    <li>compression</li>
-                    <li>visualization</li>
-                    <li>networking</li>
-                </ul>
-                as well as computer vision and AI
-            </article>
-            
-            <!-- education -->
-            <article class="Education">
-                <h4>Education</h4>
-                <ul class="schools">
-                    <li>STMC 2015|2020</li>
-                    <li>SFU 2020|present</li>
-                </ul>
-            </article>
-
-            <!-- Work -->
-            <article>
-                <h4>Work Experience</h4>
-                <ul class ="jobs">
-                    <li><a href="https://www.cellula.com/">Cellula Robotics</a></li>
-                    <li><a href="https://www.bccrc.ca/dept/mo/labs/aparicio-lab">BC Cancer Research</a></li>
-                </ul>
-            </article>
-
-            <!-- Socials -->
-            <footer class="Socials">
-                <h4>
-                    See more at:
-                </h4>
-                <a class="github" href="https://github.com/ivonr7">Github</a>
-                <a class="linkedin" href="https://www.linkedin.com/in/isaac-von-riedemann-483318223/">LinkedIn</a>
-                <a href="./assets/MyResume.pdf">Resume</a></li>
-            </footer>
-            
-        </aside>
+        <div class="card">
+            <aside class="about">
+                <div class="profile">
+                    <img src="#" alt="profile_pic">
+                    <h3>Isaac von Riedemann</h3>
+                </div>
+                
+    
+                
+                <article class="bio">
+                    Hi, I'm Isaac a curious person interested in data: 
+                    <ul>
+                        <li>compression</li>
+                        <li>visualization</li>
+                        <li>networking</li>
+                    </ul>
+                    as well as computer vision and AI
+                </article>
+                
+                <!-- education -->
+                <article class="Education">
+                    <h4>Education</h4>
+                    <ul class="schools">
+                        <li>STMC 2015|2020</li>
+                        <li>SFU 2020|present</li>
+                    </ul>
+                </article>
+    
+                <!-- Work -->
+                <article>
+                    <h4>Work Experience</h4>
+                    <ul class ="jobs">
+                        <li><a class="moveButt" href="https://www.cellula.com/">Cellula</a></li>
+                        <li><a class="moveButt" href="https://www.bccrc.ca/dept/mo/labs/aparicio-lab">BC Cancer</a></li>
+                    </ul>
+                </article>
+    
+                <!-- Socials -->
+                <footer class="Socials">
+                    <h4>
+                        See more at:
+                    </h4>
+                    <a class="moveButt" href="https://github.com/ivonr7">Github</a>
+                    <a class="moveButt" href="https://www.linkedin.com/in/isaac-von-riedemann-483318223/">LinkedIn</a>
+                    <a class="moveButt" href="./assets/MyResume.pdf">My Resume</a></li>
+                </footer>
+                
+            </aside>
+            <div class="bg"></div>
+            <div class="blob">
+                
+            </div>
+          </div>
+        
 
         <section class="projects">
-            <article class="Cancer">
+            
+            <article id="Cancer">
+                <div class="project_header">
                 <h2>Blob Detection in Python</h2>
-                <a href="#">link to project</a>
+                <a class="moveButt" href="#">link to project</a>
+                </div>
+                <img src="#" alt="Bead image">
                 <p>
                     For this project I was at BC Cancer.  It was an exploratory project seeing if we could characterize if our images were in focus from the radii of Bead images from our microscope.  Bead images were little flurophores (small object the emit light if excited by a certain wavelenght) ie little circles in the image that due to physics would get bigger if the object was out of focus or smaller if it was in focus.  This project involved increasing contrast using autoscaling.  Using adaptive thresholding to convert the image to binary and creating nicer circles using morphological opening and closing.  It finally used scikit images region props function to get features.  We then filter based on eccentricity and diameter. 
                 </p>
             </article>
-
+           
+            <article id="Nlp">
+                <div class="project_header">
+                <h2>Using BERTopic for topic modeling</h2>
+                <a class="moveButt" href="#">link to project</a>
+                </div>
+                <img src="#" alt="cluster">
+                <p>
+                    For this project I was tasked with getting the main topics for the ShareGPT dataset for validating it's use in a paper extending GPTCache (a cache store for users of chatGPT to decrease costs).  For this oroject I tried a couple different approaches strating with the Berkely Neural Parser as well as basic clustering with embedding.  I then stumbled upon the BERTopic project which was an extension of the embedding->clustering pipeline.  It also added a characterization technique which would search the cluster for words that were highly frequent in a single question but infrequent across all the questions mostly returning nouns which could be characterized as topics.  First from the dataset I had to do some cleaning.  I found the best performance came when only choosing the first question form each topic. The assumption is that often the first question contains the topic.  After running the dataset through the pipeline we got many topics that seemed very valid.     
+                </p>
+            </article>
         </section>
 
     </main>
