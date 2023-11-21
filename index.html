@@ -5,56 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Isaac von Riedemann</title>
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href=
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./JS/openNav.js"></script>
+    <script src="./JS/closeNav().js"></script>
 </head>
 <body>
     <nav class="navigation">
-        <a href="#">home</a>
-        <a href="#Cancer">Project 1</a>
-        <a href="#Nlp">Project 2</a>
+        
+        <div class="links" id="Links">
+        <!-- home -->
+        <a class="moveButt" href="#" > home</a>
+
+        <!-- Project1 -->
+        <a class="moveButt" href="#Cancer" > Proj 1</a>
+
+        <!-- Project2 -->
+            <a class="moveButt" href="#Nlp" >  Proj 2</a>
+        </div>
+        
     </nav>
     <main class="container">
-        <aside class="about">
-            <h3>Isaac von Riedemann</h3>
-            
-            <article class="bio">
-                Hi, I'm Isaac a curious person interested in data: 
-                <ul>
-                    <li>compression</li>
-                    <li>visualization</li>
-                    <li>networking</li>
-                </ul>
-                as well as computer vision and AI
-            </article>
-            
-            <!-- education -->
-            <article class="Education">
-                <h4>Education</h4>
-                <ul class="schools">
-                    <li>STMC 2015|2020</li>
-                    <li>SFU 2020|present</li>
-                </ul>
-            </article>
-
-            <!-- Work -->
-            <article>
-                <h4>Work Experience</h4>
-                <ul class ="jobs">
-                    <li><a href="https://www.cellula.com/">Cellula Robotics</a></li>
-                    <li><a href="https://www.bccrc.ca/dept/mo/labs/aparicio-lab">BC Cancer Research</a></li>
-                </ul>
-            </article>
-
-            <!-- Socials -->
-            <footer class="Socials">
-                <h4>
-                    See more at:
-                </h4>
-                <a class="github" href="https://github.com/ivonr7">Github</a>
-                <a class="linkedin" href="https://www.linkedin.com/in/isaac-von-riedemann-483318223/">LinkedIn</a>
-                <a href="./assets/MyResume.pdf">Resume</a></li>
-            </footer>
-            
-        </aside>
+        <div class="card">
+            <aside class="about">
+                <div class="profile">
+                    <img src="#" alt="profile_pic">
+                    <h3>Isaac von Riedemann</h3>
+                </div>
+                
+    
+                
+                <article class="bio">
+                    Hi, I'm Isaac a curious person interested in data: 
+                    <ul>
+                        <li>compression</li>
+                        <li>visualization</li>
+                        <li>networking</li>
+                    </ul>
+                    as well as computer vision and AI
+                </article>
+                
+                <!-- education -->
+                <article class="Education">
+                    <h4>Education</h4>
+                    <ul class="schools">
+                        <li>STMC 2015|2020</li>
+                        <li>SFU 2020|present</li>
+                    </ul>
+                </article>
+    
+                <!-- Work -->
+                <article>
+                    <h4>Work Experience</h4>
+                    <ul class ="jobs">
+                        <li><a class="moveButt" href="https://www.cellula.com/">Cellula</a></li>
+                        <li><a class="moveButt" href="https://www.bccrc.ca/dept/mo/labs/aparicio-lab">BC Cancer</a></li>
+                    </ul>
+                </article>
+    
+                <!-- Socials -->
+                <footer class="Socials">
+                    <h4>
+                        See more at:
+                    </h4>
+                    <a class="moveButt" href="https://github.com/ivonr7">Github</a>
+                    <a class="moveButt" href="https://www.linkedin.com/in/isaac-von-riedemann-483318223/">LinkedIn</a>
+                    <a class="moveButt" href="./assets/MyResume.pdf">My Resume</a></li>
+                </footer>
+                
+            </aside>
+            <div class="bg"></div>
+            <div class="blob">
+                
+            </div>
+          </div>
+        
 
         <section class="projects">
             
