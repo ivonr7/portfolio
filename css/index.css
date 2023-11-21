@@ -78,6 +78,17 @@ body{
     height: 100%;
 }
 
+.project_header{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.project_header .moveButt{
+    font-size: 15px;
+    width:6em;
+    margin-top: 8%;
+}
+
 .moveButt {
     display: inline-block;
     transition: all 0.2s ease-in;
