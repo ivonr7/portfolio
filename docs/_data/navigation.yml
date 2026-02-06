@@ -1,5 +1,7 @@
 main:
   - title: "My Resume"
     url: /assets/ivonr7_resume.pdf
-  - title: "Projects"
+  - title: "About"
     url: /about
+  - title: "Projects"
+    url: /projects
