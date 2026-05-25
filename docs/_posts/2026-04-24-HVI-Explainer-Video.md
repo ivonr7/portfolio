@@ -1,6 +1,6 @@
 
 ---
-layout: single
+layout: post
 title:  "HVI: A new Colour Space for Low Light Image Enhancement Explainer"
 categories: CMPT461
 tags: Computer-Vision LLIE Explainer
