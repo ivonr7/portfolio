@@ -32,7 +32,7 @@ github_username: ivonr7
 
 # Build settings
 remote_theme: mmistakes/minimal-mistakes 
-minimal_mistakes_skin: dirt
+minimal_mistakes_skin: dark
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
@@ -48,7 +48,6 @@ defaults:
 collections:
   projects:
     output: true
-    permalink: /:collection/:path/
 
 
 author:
